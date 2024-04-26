@@ -1,6 +1,6 @@
 SELECT * from article;
-SELECT * from article WHERE prix > 2;
-SELECT * from article WHERE prix > 2 AND prix < 6.25;
+SELECT ref, designation from article WHERE prix >= 2;
+SELECT * from article WHERE prix >= 2 AND prix <= 6.25;
 SELECT * from article WHERE prix BETWEEN 2 AND 6.25;
 SELECT * from article WHERE ID_FOU = 1 AND prix NOT BETWEEN 2 AND 6.25 ORDER BY prix DESC;
 SELECT * from article WHERE ID_FOU = 1 OR ID_FOU = 3;
